@@ -17,24 +17,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const eqArrays = function(array1, array2) {
-  let result = false;
-
-  if (array1.length === array2.length) {
-
-    if (array1.every((v, i) => v === array2[i])) {
-      result = true;
-    }
-  }
-  return result;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log("The two arrays are equal");
-  } else {
-    console.log("The two arrays entered do not match");
-  }
-};
-
-console.log(letterPositions("lighthouse in the house"));
+module.exports = letterPositions;
